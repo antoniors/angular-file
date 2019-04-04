@@ -22,6 +22,7 @@ Easy to use Angular directives for user file selections ([DEMO PAGE](http://acke
   - [ngf Directive](#ngf-directive)
   - [ngfDrop Directive](#ngfdrop-directive)
   - [ngfBackground Directive](#ngfbackground-directive)
+  - [ngfSrc Directive](#ngfsrc-directive)
   - [ngfSelect Directive](#ngfselect-directive)
   - [ngfUploadStatus Directive](#ngfuploadstatus-directive)
 - [Uploading](#uploading)
@@ -154,7 +155,7 @@ Element
 </div>
 ```
 
-Images Only
+Image Backgrounds Only
 ```html
 <button ngfSelect [(file)]="userFile" accept="image/*" multiple="1">
   Tap to Select
@@ -162,6 +163,14 @@ Images Only
 <div [ngfBackground]="userFile"
   style="background-size:cover;background-repeat:no-repeat;width:50px;height:50px"
 ></div>
+```
+
+Images Only
+```html
+<button ngfSelect [(file)]="userFile" accept="image/*" multiple="1">
+  Tap to Select
+</button>
+<img [ngfSrc]="userFile" />
 ```
 
 ### Drop Files Examples
@@ -197,6 +206,7 @@ Combo Drop Select
 - [ngfDrop Directive](#ngfdrop-directive)
 - [ngfSelect Directive](#ngfselect-directive)
 - [ngfBackground Directive](#ngfbackground-directive)
+- [ngfSrc Directive](#ngfsrc-directive)
 - [ngfUploadStatus Directive](#ngfuploadstatus-directive)
 
 ### ngf Directive
@@ -238,6 +248,11 @@ Extends [ngf](#ngf-directive) and auto engages click base file selecting
 ### ngfBackground Directive
 ```javascript
 [ngfBackground]:File
+```
+
+### ngfSrc Directive
+```javascript
+[ngfSrc]:File
 ```
 
 ### ngfUploadStatus Directive
