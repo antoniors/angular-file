@@ -9,7 +9,7 @@ export class ngfBackground {
 
   ngOnChanges(changes:any){
     dataUrl(this.file)
-    .then((src:any)=>{
+    .then(src=>{
       const urlString = 'url(\'' + (src || '') + '\')'
       this.ElementRef.nativeElement.style.backgroundImage = urlString
     })

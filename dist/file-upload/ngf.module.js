@@ -8,11 +8,13 @@ var ngf_directive_1 = require("./ngf.directive");
 var ngfSelect_directive_1 = require("./ngfSelect.directive");
 var ngfUploadStatus_directive_1 = require("./ngfUploadStatus.directive");
 var ngfFormData_directive_1 = require("./ngfFormData.directive");
+var ngfSrc_directive_1 = require("./ngfSrc.directive");
 //import{ HttpModule } from '@angular/http';
 var declarations = [
     ngfDrop_directive_1.ngfDrop,
     ngfSelect_directive_1.ngfSelect,
     ngfBackground_directive_1.ngfBackground,
+    ngfSrc_directive_1.ngfSrc,
     ngfUploadStatus_directive_1.ngfUploadStatus,
     ngfFormData_directive_1.ngfFormData,
     ngf_directive_1.ngf
