@@ -7,12 +7,14 @@ import { ngf } from './ngf.directive';
 import { ngfSelect } from './ngfSelect.directive';
 import { ngfUploadStatus } from './ngfUploadStatus.directive';
 import { ngfFormData } from './ngfFormData.directive';
+import { ngfSrc } from './ngfSrc.directive';
 //import{ HttpModule } from '@angular/http';
 
 const declarations = [
   ngfDrop,
   ngfSelect,
   ngfBackground,
+  ngfSrc,
   ngfUploadStatus,
   ngfFormData,
   ngf
