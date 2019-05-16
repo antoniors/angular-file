@@ -1,4 +1,10 @@
 "use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 var common_1 = require("@angular/common");
 var core_1 = require("@angular/core");
@@ -9,7 +15,6 @@ var ngfSelect_directive_1 = require("./ngfSelect.directive");
 var ngfUploadStatus_directive_1 = require("./ngfUploadStatus.directive");
 var ngfFormData_directive_1 = require("./ngfFormData.directive");
 var ngfSrc_directive_1 = require("./ngfSrc.directive");
-//import{ HttpModule } from '@angular/http';
 var declarations = [
     ngfDrop_directive_1.ngfDrop,
     ngfSelect_directive_1.ngfSelect,
@@ -22,18 +27,15 @@ var declarations = [
 var ngfModule = (function () {
     function ngfModule() {
     }
-    ngfModule.decorators = [
-        { type: core_1.NgModule, args: [{
-                    imports: [
-                        common_1.CommonModule
-                        //,HttpModule
-                    ],
-                    declarations: declarations,
-                    exports: declarations //[HttpModule, ...declarations]
-                },] },
-    ];
-    /** @nocollapse */
-    ngfModule.ctorParameters = function () { return []; };
+    ngfModule = __decorate([
+        core_1.NgModule({
+            imports: [
+                common_1.CommonModule
+            ],
+            declarations: declarations,
+            exports: declarations
+        })
+    ], ngfModule);
     return ngfModule;
 }());
 exports.ngfModule = ngfModule;

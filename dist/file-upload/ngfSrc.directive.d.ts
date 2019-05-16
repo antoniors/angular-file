@@ -3,5 +3,5 @@ export declare class ngfSrc {
     ElementRef: ElementRef;
     file: any;
     constructor(ElementRef: ElementRef);
-    ngOnChanges(changes: any): void;
+    ngOnChanges(_changes: any): void;
 }

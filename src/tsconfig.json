@@ -1,32 +1,31 @@
 {
   "compilerOptions": {
-    "forceConsistentCasingInFileNames": true,
-    "noImplicitReturns": true,
     "strict": false,
     "noUnusedLocals": true,
-
+    "noUnusedParameters": true,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "rootDir": ".",
     "outDir": "../dist",
-    "target": "es5",
+    "target": "ES5",
     "module": "commonjs",
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "sourceMap": false,
     "noEmitHelpers": false,
-    "noImplicitAny": false,
     "declaration": true,
-    "skipLibCheck": true,
     "stripInternal": true,
-    "lib": ["dom", "es2015"],
-    "types": [],
     "typeRoots": [
       "../node_modules/@types"
     ]
   },
-  "exclude": [
-    "node_modules"
-  ],
   "files": [
     "./index.ts"
+  ],
+  "exclude": [
+    "**/node_modules",
+    "../node_modules",
+    "**/*.spec.ts"
   ]
 }
