@@ -7,7 +7,7 @@ export class ngfSrc {
 
   constructor(public ElementRef: ElementRef) { }
 
-  ngOnChanges(changes: any) {
+  ngOnChanges(_changes: any) {
     dataUrl(this.file)
     .then(src=>
       this.ElementRef.nativeElement.src = src

@@ -22,6 +22,13 @@ export class SimpleDemoComponent {
 
   sendableFormData:FormData//populated via ngfFormData directive
 
+  dragFiles:any
+  validComboDrag:any
+  lastInvalids:any
+  fileDropDisabled:any
+  maxSize:any
+  baseDropValid:any
+
   constructor(public HttpClient:HttpClient){}
 
   cancel(){
@@ -32,7 +39,7 @@ export class SimpleDemoComponent {
     }
   }
 
-  uploadFiles(files:File[]):Subscription{
+  uploadFiles():Subscription{
     const req = new HttpRequest<FormData>('POST', this.url, this.sendableFormData, {
       reportProgress: true//, responseType: 'text'
     })

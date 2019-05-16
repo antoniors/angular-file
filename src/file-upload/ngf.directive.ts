@@ -103,7 +103,7 @@ export class ngf {
     let elm = this.element.nativeElement
 
     if( isFileInput(elm) ){
-      const bindedHandler = ev=>this.beforeSelect()
+      const bindedHandler = _ev=>this.beforeSelect()
       elm.addEventListener('click', bindedHandler)
       elm.addEventListener('touchstart', bindedHandler)
       return
@@ -283,13 +283,15 @@ export class ngf {
     this.handleFiles(files)
   }
 
-  getFileFilterFailName(file:File):string | undefined{
+  getFileFilterFailName(
+    file:File
+  ):string | undefined{
     for(let i = 0; i < this.filters.length; i++){
       if( !this.filters[i].fn.call(this, file) ){
         return this.filters[i].name
       }
     }
-    return
+    return undefined
   }
 
   isFileValid(file:File):boolean{

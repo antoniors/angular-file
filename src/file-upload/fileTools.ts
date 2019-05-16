@@ -148,7 +148,9 @@ export function applyExifRotation(
   .then(()=>file)
 }
 
-export function readOrientation(file:File):Promise<orientationMeta>{
+export function readOrientation(
+  file:File
+):Promise<orientationMeta>{
   return new Promise((res,rej)=>{
     var reader = new FileReader();
     var slicedFile = file.slice ? file.slice(0, 64 * 1024) : file;
@@ -156,7 +158,7 @@ export function readOrientation(file:File):Promise<orientationMeta>{
     reader.onerror = rej
     reader.onload = function (e:any) {
       var result:orientationMeta = {orientation: 1};
-      var view = new DataView(this.result);
+      var view = new DataView( <ArrayBuffer>this.result );
       if (view.getUint16(0, false) !== 0xFFD8) return res(result);
 
       var length = view.byteLength,

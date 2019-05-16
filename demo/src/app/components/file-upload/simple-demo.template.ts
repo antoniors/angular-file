@@ -269,7 +269,7 @@ export const string = "<style>"+"\r"+
 "\n"+"\r"+
 "\n    <button type=\"button\""+"\r"+
 "\n      class=\"btn btn-success btn-s\""+"\r"+
-"\n      (click)=\"uploadFiles(files)\""+"\r"+
+"\n      (click)=\"uploadFiles()\""+"\r"+
 "\n      [disabled]=\"!files.length\""+"\r"+
 "\n    >"+"\r"+
 "\n      <span class=\"glyphicon glyphicon-upload\"></span> Upload all"+"\r"+

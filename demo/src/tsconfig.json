@@ -1,22 +1,23 @@
 {
   "compilerOptions": {
-    "target": "es5",
     "strict": false,
     "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "removeComments": true,
     "noImplicitAny": false,
+    "target": "ES5",
     "module": "commonjs",
     "moduleResolution": "node",
     "sourceMap": true,
-    "inlineSources": true,
     "emitDecoratorMetadata": true,
-    "baseUrl": ".",
+    "resolveJsonModule": true,
     "experimentalDecorators": true,
     "noEmitHelpers": false,
     "allowJs": true,
     "suppressImplicitAnyIndexErrors": true,
-    "lib": ["es2015", "dom"]
+    "outDir": "../www"
   },
-  "files": [
-    "typings.d.ts"
+  "include":[
+    "./index.ts"
   ]
 }

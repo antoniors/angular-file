@@ -22,6 +22,13 @@ export const string = "import { Component } from '@angular/core'"+
 "\n"+
 "\n  sendableFormData:FormData//populated via ngfFormData directive"+
 "\n"+
+"\n  dragFiles:any"+
+"\n  validComboDrag:any"+
+"\n  lastInvalids:any"+
+"\n  fileDropDisabled:any"+
+"\n  maxSize:any"+
+"\n  baseDropValid:any"+
+"\n"+
 "\n  constructor(public HttpClient:HttpClient){}"+
 "\n"+
 "\n  cancel(){"+
@@ -32,7 +39,7 @@ export const string = "import { Component } from '@angular/core'"+
 "\n    }"+
 "\n  }"+
 "\n"+
-"\n  uploadFiles(files:File[]):Subscription{"+
+"\n  uploadFiles():Subscription{"+
 "\n    const req = new HttpRequest<FormData>('POST', this.url, this.sendableFormData, {"+
 "\n      reportProgress: true//, responseType: 'text'"+
 "\n    })"+

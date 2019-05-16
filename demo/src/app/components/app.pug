@@ -1,7 +1,14 @@
 main.bd-pageheader
   .container
     h1 angular-file
-    p version {{ version }}
+    p
+      |version {{ version }}
+      |&nbsp;-&nbsp;
+      a(
+        href="stats.html"
+        style="text-decoration:underline;"
+      )
+        strong bundle stats
     div(style="display:inline-block;padding:.2em;vertical-align:middle;")
       a.btn.btn-primary(href="https://github.com/ackerapple/angular-file") View on GitHub
     div(style="display:inline-block;padding:.2em;")
@@ -26,6 +33,9 @@ main.bd-pageheader
   //-section(id="getting-started" "[innerHTML]"="gettingStarted|safeHtml")
 
   file-upload-section.col-md-12
+
+.text-center(style="padding:1em;")
+  a(href="stats.html") view example bundle stats
 
 footer.footer
   .container

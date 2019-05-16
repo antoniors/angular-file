@@ -7,7 +7,7 @@ export class ngfBackground {
 
   constructor(public ElementRef:ElementRef){}
 
-  ngOnChanges(changes:any){
+  ngOnChanges( _changes:any ){
     dataUrl(this.file)
     .then(src=>{
       const urlString = 'url(\'' + (src || '') + '\')'
