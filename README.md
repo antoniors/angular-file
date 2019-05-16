@@ -4,8 +4,6 @@ Easy to use Angular directives for user file selections ([DEMO PAGE](http://acke
 [![hire me](https://ackerapple.github.io/resume/assets/images/hire-me-badge.svg)](https://ackerapple.github.io/resume/)
 [![npm version](https://badge.fury.io/js/angular-file.svg)](http://badge.fury.io/js/angular-file)
 [![npm downloads](https://img.shields.io/npm/dm/angular-file.svg)](https://npmjs.org/angular-file)
-[![Build status](https://ci.appveyor.com/api/projects/status/sq815bogrtky29b8/branch/development?svg=true)](https://ci.appveyor.com/project/AckerApple/angular-file/branch/development)
-[![Build Status](https://travis-ci.org/AckerApple/angular-file.svg?branch=development)](https://travis-ci.org/AckerApple/angular-file)
 [![Dependency Status](https://david-dm.org/ackerapple/angular-file.svg)](https://david-dm.org/ackerapple/angular-file)
 
 > This package is to handle select/drag/drop of files. Once files are selected, for uploading, you then use native `@angular/common` for uploading selected files ([see here for more on uploading](#uploading)).
