@@ -1,6 +1,12 @@
 # angular-file - Change Log
 All notable changes to this project will be documented here.
 
+## 1.2.0 - (2019-05-16)
+- Updated to latest Angular
+- Demo has bundle stats
+- Removed legacy build techniques
+- Updated from angular-cli.json to angular.json
+
 ## 1.1.1 - (2019-04-04)
 - Added ngfSrc
 

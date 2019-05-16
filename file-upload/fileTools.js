@@ -10,22 +10,15 @@ function acceptType(accept, type, name) {
     var regx;
     var acceptRegString;
     for (var x = defs.length - 1; x >= 0; --x) {
-        //Escapes dots in mimetype
         acceptRegString = defs[x];
-        //trim
         acceptRegString = acceptRegString.replace(/(^\s+|\s+$)/g, '');
-        //Escapes stars in mimetype
         acceptRegString = acceptRegString.replace(/\*/g, '.*');
-        //let acceptReg = '^((' + acceptRegString
-        //acceptReg = acceptReg.replace(/,/g,')|(') + '))$'
-        //try by mime
         regx = new RegExp(acceptRegString, 'gi');
         if (type.search(regx) >= 0) {
             return true;
         }
-        //try by ext
         if (acceptRegString.substring(0, 1) == '.') {
-            acceptRegString = '\\' + acceptRegString; //.substring(1, acceptRegString.length-1)//remove dot at front
+            acceptRegString = '\\' + acceptRegString;
             regx = new RegExp(acceptRegString + '$', 'i');
             if ((name || type).search(regx) >= 0) {
                 return true;
@@ -164,7 +157,6 @@ function readOrientation(file) {
     });
 }
 exports.readOrientation = readOrientation;
-/** converts file-input file into base64 dataUri */
 function dataUrl(file, disallowObjectUrl) {
     if (!file)
         return Promise.resolve(file);
@@ -179,8 +171,6 @@ function dataUrl(file, disallowObjectUrl) {
     if (win.FileReader && file &&
         (!win.FileAPI || navigator.userAgent.indexOf('MSIE 8') === -1 || file.size < 20000) &&
         (!win.FileAPI || navigator.userAgent.indexOf('MSIE 9') === -1 || file.size < 4000000)) {
-        //prefer URL.createObjectURL for handling refrences to files of all sizes
-        //since it doesn´t build a large string in memory
         var URL = win.URL || win.webkitURL;
         if (FileReader) {
             deferred = new Promise(function (res, rej) {
@@ -211,7 +201,7 @@ function dataUrl(file, disallowObjectUrl) {
     }
     else {
         file[disallowObjectUrl ? '$ngfDataUrl' : '$ngfBlobUrl'] = '';
-        return Promise.reject(new Error('Browser does not support window.FileReader, window.FileReader, or window.FileAPI')); //deferred.reject();
+        return Promise.reject(new Error('Browser does not support window.FileReader, window.FileReader, or window.FileAPI'));
     }
     if (disallowObjectUrl) {
         p = file.$$ngfDataUrlPromise = deferred;
@@ -309,7 +299,6 @@ function restoreExif(orig, resized) {
     };
     ExifRestorer.decode64 = function (input) {
         var chr1, chr2, chr3 = '', enc1, enc2, enc3, enc4 = '', i = 0, buf = [];
-        // remove all characters that are not A-Z, a-z, 0-9, +, /, or =
         var base64test = /[^A-Za-z0-9\+\/\=]/g;
         if (base64test.exec(input)) {
             console.log('There were invalid base64 characters in the input text.');
@@ -335,7 +324,7 @@ function restoreExif(orig, resized) {
         } while (i < input.length);
         return buf;
     };
-    return ExifRestorer.restore(orig, resized); //<= EXIF
+    return ExifRestorer.restore(orig, resized);
 }
 exports.restoreExif = restoreExif;
 ;

@@ -12,10 +12,9 @@ exports.detectSwipe = function (evt) {
         if (evt.type === 'touchstart') {
             initialTouchStartX = touches[0].clientX;
             initialTouchStartY = touches[0].clientY;
-            return true; // don't block event default
+            return true;
         }
         else {
-            // prevent scroll from triggering event
             if (evt.type === 'touchend') {
                 var currentX = touches[0].clientX;
                 var currentY = touches[0].clientY;
@@ -44,10 +43,7 @@ exports.createInvisibleFileInputWrap = function () {
     label.style.margin = '0px';
     label.style.padding = '0px';
     label.setAttribute('tabindex', '-1');
-    //bindAttrToFileInput(fileElem, label);
-    //generatedElems.push({el: elem, ref: label});
     label.appendChild(fileElem);
-    //document.body.appendChild( label );
     return label;
 };
 exports.createFileInput = function () {

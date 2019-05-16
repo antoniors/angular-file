@@ -3,5 +3,5 @@ export declare class ngfBackground {
     ElementRef: ElementRef;
     file: any;
     constructor(ElementRef: ElementRef);
-    ngOnChanges(changes: any): void;
+    ngOnChanges(_changes: any): void;
 }
