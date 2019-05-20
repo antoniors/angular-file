@@ -191,10 +191,14 @@ var ngf = (function () {
     };
     ngf.prototype.eventToFiles = function (event) {
         var transfer = this.eventToTransfer(event);
-        if (transfer.files && transfer.files.length)
-            return transfer.files;
-        if (transfer.items && transfer.items.length)
-            return transfer.items;
+        if (transfer) {
+            if (transfer.files && transfer.files.length) {
+                return transfer.files;
+            }
+            if (transfer.items && transfer.items.length) {
+                return transfer.items;
+            }
+        }
         return [];
     };
     ngf.prototype.applyExifRotations = function (files) {

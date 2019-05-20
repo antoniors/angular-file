@@ -1,6 +1,9 @@
 # angular-file - Change Log
 All notable changes to this project will be documented here.
 
+## 1.2.1 - (2019-05-20)
+- Adjust processing events into files
+
 ## 1.2.0 - (2019-05-16)
 - Updated to latest Angular
 - Demo has bundle stats
