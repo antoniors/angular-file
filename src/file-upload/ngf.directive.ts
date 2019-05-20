@@ -251,6 +251,8 @@ export class ngf {
 
   eventToFiles(event:Event){
     const transfer = this.eventToTransfer(event);
+    if(transfer == null)
+      return [];
     if(transfer.files && transfer.files.length)return transfer.files
     if(transfer.items && transfer.items.length)return transfer.items
     return []
