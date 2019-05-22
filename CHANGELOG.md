@@ -1,6 +1,10 @@
 # angular-file - Change Log
 All notable changes to this project will be documented here.
 
+## 1.2.3 - (2019-05-22)
+- kb to byte on demo page
+  - https://github.com/AckerApple/angular-file/issues/55
+
 ## 1.2.1 - (2019-05-20)
 - Adjust processing events into files
 

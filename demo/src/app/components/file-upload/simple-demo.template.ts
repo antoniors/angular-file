@@ -145,7 +145,7 @@ export const string = "<style>"+"\r"+
 "\n  </div>"+"\r"+
 "\n  "+"\r"+
 "\n  <div class=\"inline-block\">"+"\r"+
-"\n    <strong>maxSize kb</strong>"+"\r"+
+"\n    <strong>maxSize byte</strong>"+"\r"+
 "\n    <div>"+"\r"+
 "\n      <input type=\"number\" [(ngModel)]=\"maxSize\" placeholder=\"1024 == 1mb\" />"+"\r"+
 "\n    </div>"+"\r"+
