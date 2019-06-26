@@ -40,8 +40,7 @@ Easy to use Angular directives for user file selections ([DEMO PAGE](http://acke
 
 2. Currently `angular-file` contains three directives: `ngf`, `ngfSelect`, and `ngfDrop`. `ngf` and `ngfSelect` are quite the same with just different defaults and they both utilize `<input type="file" />` functionality. `ngfDrop` is used to designate an area that will be used for dropping of file(s).
 
-3. More information regarding using of ***angular-file*** is located in
-  [demo](http://ackerapple.github.io/angular-file/) and [demo sources](https://github.com/ackerapple/angular-file/tree/master/demo).
+3. More information regarding using of ***angular-file*** is located in [demo](http://ackerapple.github.io/angular-file/) and [demo sources](https://github.com/ackerapple/angular-file/tree/development/demo).
 
 ## Examples
 
