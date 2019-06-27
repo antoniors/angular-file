@@ -12,6 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var ngfUploadStatus = (function () {
     function ngfUploadStatus() {
+        this.percent = 0;
         this.percentChange = new core_1.EventEmitter();
     }
     ngfUploadStatus.prototype.ngOnChanges = function (changes) {

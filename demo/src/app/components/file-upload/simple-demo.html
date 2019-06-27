@@ -265,7 +265,10 @@
       </p>
     </ng-container>
 
-    <i *ngIf="progress==100" class="glyphicon glyphicon-ok"></i>
+    <ng-container *ngIf="progress==100">
+      <i class="glyphicon glyphicon-ok"></i>
+      &nbsp;Upload Complete
+    </ng-container>
 
     <button type="button"
       class="btn btn-success btn-s"

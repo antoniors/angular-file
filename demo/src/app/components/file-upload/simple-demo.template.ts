@@ -265,7 +265,10 @@ export const string = "<style>"+"\r"+
 "\n      </p>"+"\r"+
 "\n    </ng-container>"+"\r"+
 "\n"+"\r"+
-"\n    <i *ngIf=\"progress==100\" class=\"glyphicon glyphicon-ok\"></i>"+"\r"+
+"\n    <ng-container *ngIf=\"progress==100\">"+"\r"+
+"\n      <i class=\"glyphicon glyphicon-ok\"></i>"+"\r"+
+"\n      &nbsp;Upload Complete"+"\r"+
+"\n    </ng-container>"+"\r"+
 "\n"+"\r"+
 "\n    <button type=\"button\""+"\r"+
 "\n      class=\"btn btn-success btn-s\""+"\r"+

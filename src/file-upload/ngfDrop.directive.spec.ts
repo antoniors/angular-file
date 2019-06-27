@@ -22,7 +22,7 @@ describe('ngfDrop', () => {
       imports: [AppModule]
     });
 
-    TestBed.compileComponents()
+    return TestBed.compileComponents()
     .then(()=>{
       fixture = TestBed.createComponent(ContainerComponent);
       fixture.detectChanges();

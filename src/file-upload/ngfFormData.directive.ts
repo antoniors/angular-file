@@ -7,9 +7,9 @@ import {
 
 @Directive({selector: 'ngfFormData'})
 export class ngfFormData {
-  @Input() files:File[]
+  @Input() files !: File[]
   @Input() postName:string = "file"
-  @Input() fileName:string//force file name
+  @Input() fileName !: string//force file name
 
   @Input() FormData:FormData = new FormData()
   @Output() FormDataChange:EventEmitter<FormData> = new EventEmitter()

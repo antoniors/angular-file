@@ -17,7 +17,7 @@ export class ngfDrop extends ngf {
   @Input() invalidDrag = false
   @Output() invalidDragChange:EventEmitter<boolean> = new EventEmitter()
 
-  @Input() dragFiles:dragMeta[]
+  @Input() dragFiles !: dragMeta[]
   @Output() dragFilesChange:EventEmitter<dragMeta[]> = new EventEmitter()
 
   @HostListener('drop', ['$event'])

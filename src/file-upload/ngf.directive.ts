@@ -22,9 +22,9 @@ export class ngf {
   filters:{name:string, fn:(file:File)=>boolean}[] = []
   lastFileCount:number=0
 
-  @Input() multiple:string
-  @Input() accept:string
-  @Input() maxSize:number
+  @Input() multiple !:string
+  @Input() accept   !:string
+  @Input() maxSize  !:number
   //@Input() forceFilename:string
   //@Input() forcePostname:string
   @Input() ngfFixOrientation:boolean = true
@@ -36,10 +36,10 @@ export class ngf {
   @Input() lastInvalids:InvalidFileItem[] = []
   @Output() lastInvalidsChange:EventEmitter<{file:File,type:string}[]> = new EventEmitter()
 
-  @Input() lastBaseUrl:string//base64 last file uploaded url
+  @Input() lastBaseUrl !: string//base64 last file uploaded url
   @Output() lastBaseUrlChange:EventEmitter<string> = new EventEmitter()
   
-  @Input() file:File//last file uploaded
+  @Input() file !: File//last file uploaded
   @Output() fileChange:EventEmitter<File> = new EventEmitter()
 
   @Input() files:File[] = []

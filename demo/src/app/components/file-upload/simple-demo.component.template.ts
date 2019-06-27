@@ -14,7 +14,8 @@ export const string = "import { Component } from '@angular/core'"+
 "\n  accept = '*'"+
 "\n  files:File[] = []"+
 "\n  progress:number"+
-"\n  url = 'https://evening-anchorage-3159.herokuapp.com/api/'"+
+"\n  //url = 'https://evening-anchorage-3159.herokuapp.com/api/'"+
+"\n  url = 'https://jquery-file-upload.appspot.com/'"+
 "\n  hasBaseDropZoneOver:boolean = false"+
 "\n  httpEmitter:Subscription"+
 "\n  httpEvent:HttpEvent<{}>"+
@@ -40,7 +41,10 @@ export const string = "import { Component } from '@angular/core'"+
 "\n  }"+
 "\n"+
 "\n  uploadFiles():Subscription{"+
-"\n    const req = new HttpRequest<FormData>('POST', this.url, this.sendableFormData, {"+
+"\n    const req = new HttpRequest<FormData>("+
+"\n      'POST',"+
+"\n      this.url,"+
+"\n      this.sendableFormData, {"+
 "\n      reportProgress: true//, responseType: 'text'"+
 "\n    })"+
 "\n    "+
@@ -54,7 +58,7 @@ export const string = "import { Component } from '@angular/core'"+
 "\n          console.log('request done', event)"+
 "\n        }"+
 "\n      },"+
-"\n      error=>console.log('Error Uploading',error)"+
+"\n      error=>alert('Error Uploading Files: '+error.message)"+
 "\n    )"+
 "\n  }"+
 "\n"+

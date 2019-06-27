@@ -13,7 +13,7 @@ import { ngfSelect } from './ngfSelect.directive'
   template: '<input type="file" #ngf="ngfSelect" ngfSelect />'
 })
 export class ContainerComponent {
-  @ViewChild("ngf") ngf:ngfSelect
+  @ViewChild("ngf", null) ngf:ngfSelect
 }
 
 @NgModule({
@@ -30,7 +30,7 @@ describe('ngfSelect', () => {
       imports: [AppModule]
     });
 
-    TestBed.compileComponents()
+    return TestBed.compileComponents()
     .then(()=>{
       fixture = TestBed.createComponent(ContainerComponent);
       fixture.detectChanges();

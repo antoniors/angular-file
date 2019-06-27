@@ -1,6 +1,18 @@
 # angular-file - Change Log
 All notable changes to this project will be documented here.
 
+## 1.3.0 - (2019-06-27)
+- Built on ng8
+  - NOTE: A report from another package on ng8 claims may not be compatible with ng7
+- Built with strict mode
+- Fixed demo upload url
+- Fixed testing enviroment
+
+## 1.2.4 - (2019-06-26)
+- updated docs
+- removed peer dependencies
+- moved some dependencies into devDependencies
+
 ## 1.2.3 - (2019-05-22)
 - kb to byte on demo page
   - https://github.com/AckerApple/angular-file/issues/55

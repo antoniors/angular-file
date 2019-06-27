@@ -14,7 +14,8 @@ export class SimpleDemoComponent {
   accept = '*'
   files:File[] = []
   progress:number
-  url = 'https://evening-anchorage-3159.herokuapp.com/api/'
+  //url = 'https://evening-anchorage-3159.herokuapp.com/api/'
+  url = 'https://jquery-file-upload.appspot.com/'
   hasBaseDropZoneOver:boolean = false
   httpEmitter:Subscription
   httpEvent:HttpEvent<{}>
@@ -40,7 +41,10 @@ export class SimpleDemoComponent {
   }
 
   uploadFiles():Subscription{
-    const req = new HttpRequest<FormData>('POST', this.url, this.sendableFormData, {
+    const req = new HttpRequest<FormData>(
+      'POST',
+      this.url,
+      this.sendableFormData, {
       reportProgress: true//, responseType: 'text'
     })
     
@@ -54,7 +58,7 @@ export class SimpleDemoComponent {
           console.log('request done', event)
         }
       },
-      error=>console.log('Error Uploading',error)
+      error=>alert('Error Uploading Files: '+error.message)
     )
   }
 

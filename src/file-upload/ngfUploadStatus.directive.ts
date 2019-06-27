@@ -2,9 +2,9 @@ import { Directive, EventEmitter, Output, Input } from '@angular/core';
 
 @Directive({selector: 'ngfUploadStatus'})
 export class ngfUploadStatus {
-  @Input() percent:number
+  @Input() percent:number = 0
   @Output() percentChange:EventEmitter<number> = new EventEmitter()
-  @Input() httpEvent:Event
+  @Input() httpEvent !: Event
 
   ngOnChanges( changes ){
     if( changes.httpEvent && changes.httpEvent.currentValue ){
