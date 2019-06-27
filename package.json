@@ -1,15 +1,15 @@
 {
   "main": "index.js",
-  "version": "1.3.0",
-  "description": "Angular file upload directives",
+  "version": "1.3.1",
+  "description": "Easy to use Angular directives for user file selections",
   "module": "index.js",
   "typings": "index.d.ts",
   "keywords": [
-    "angular2",
-    "bootstrap",
-    "angularjs",
-    "twitter-bootstrap",
+    "Angular",
+    "ng files",
     "file-upload",
+    "ng-file-upload",
+    "ng2-file-upload",
     "angular-file-upload"
   ],
   "author": "Acker Apple",
@@ -19,8 +19,30 @@
     "url": "git+ssh://git@github.com/ackerapple/angular-file.git"
   },
   "name": "angular-file",
-  "peerDependencies": {
-    "@angular/common": "^2.3.1 || >=4.0.0",
-    "@angular/core": "^2.3.1 || >=4.0.0"
-  }
+  "contributors": [
+    {
+      "name": "Vyacheslav Chub",
+      "email": "vyacheslav.chub@valor-software.com",
+      "url": "https://github.com/buchslava"
+    },
+    {
+      "name": "Dmitriy Shekhovtsov",
+      "email": "valorkin@gmail.com",
+      "url": "https://github.com/valorkin"
+    },
+    {
+      "name": "Adrian Faciu",
+      "email": "adrian.faciu@gmail.com",
+      "url": "https://github.com/adrianfaciu"
+    },
+    {
+      "name": "Oleksandr Telnov",
+      "email": "otelnov@gmail.com",
+      "url": "https://github.com/otelnov"
+    },
+    {
+      "name": "Acker Apple",
+      "url": "https://github.com/ackerapple"
+    }
+  ]
 }
