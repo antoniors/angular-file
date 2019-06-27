@@ -5,8 +5,10 @@ Easy to use Angular directives for user file selections ([DEMO PAGE](http://acke
 [![npm version](https://badge.fury.io/js/angular-file.svg)](http://badge.fury.io/js/angular-file)
 [![npm downloads](https://img.shields.io/npm/dm/angular-file.svg)](https://npmjs.org/angular-file)
 [![Dependency Status](https://david-dm.org/ackerapple/angular-file.svg)](https://david-dm.org/ackerapple/angular-file)
+[![min size](https://badgen.net/bundlephobia/min/angular-file)](https://bundlephobia.com/result?p=angular-file)
+[![minzip size](https://badgen.net/bundlephobia/minzip/angular-file)](https://bundlephobia.com/result?p=angular-file)
 
-> This package is to handle select/drag/drop of files. Once files are selected, for uploading, you then use native `@angular/common` for uploading selected files ([see here for more on uploading](#uploading)).
+> This package is to handle select/drag/drop of files. Once files are selected, for uploading, you then use Angular's `@angular/common/http` for uploading selected files ([see here for more on uploading](#uploading)).
 
 <details>
   <summary>Table of Contents</summary>
@@ -25,6 +27,7 @@ Easy to use Angular directives for user file selections ([DEMO PAGE](http://acke
   - [ngfUploadStatus Directive](#ngfuploadstatus-directive)
 - [Uploading](#uploading)
 - [Troubleshooting](#troubleshooting)
+- [Development](#development)
 - [Credits](#credits)
 - [License](#license)
 
@@ -316,6 +319,17 @@ Please follow this guidelines when reporting bugs and feature requests:
 2. Please **always** write steps to reproduce the error. That way we can focus on fixing the bug, not scratching our heads trying to reproduce it.
 
 Thanks for understanding!
+
+## Development
+Work on this package
+
+> Source files are on not the default github branch
+
+- [source files here](https://github.com/AckerApple/angular-file.git)
+
+```
+git clone https://github.com/AckerApple/angular-file.git -b development
+```
 
 ## Credits
 - Current Author: Acker Apple

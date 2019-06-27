@@ -1,10 +1,13 @@
 # angular-file - Change Log
 All notable changes to this project will be documented here.
 
-## 1.3.0 - (2019-06-26)
+## 1.3.1 - (2019-06-27)
 - Built on ng8
+  - NOTE: A report from another package on ng8 claims may not be compatible with ng7
+- Built with strict mode
 - Fixed demo upload url
 - Fixed testing enviroment
+- Docs have bundle sizes
 
 ## 1.2.4 - (2019-06-26)
 - updated docs

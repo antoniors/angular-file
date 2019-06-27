@@ -4,8 +4,16 @@ const rootPack = require('../package.json')
 const packPath = require.resolve('../dist/package.json')
 const pack = require(packPath)
 
-pack.version = rootPack.version
-pack.jsDependencies = rootPack.jsDependencies
+const keys = [
+  'version','keywords','description','name',
+  'author','repository','license','contributors',
+  'jsDependencies'//old
+]
+
+keys.forEach(name=>{
+  if( rootPack[name]==null )return
+  pack[name]=rootPack[name]
+})
 
 fs.writeFileSync(packPath, JSON.stringify(pack, null, 2))
 const path = require('path')
