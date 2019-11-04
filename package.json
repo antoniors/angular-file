@@ -1,7 +1,6 @@
 {
   "name": "angular-file",
   "version": "2.0.0",
-  "private": true,
   "description": "Easy to use Angular directives for user file selections",
   "main": "bundles/angular-file.umd.js",
   "module": "fesm5/angular-file.js",
@@ -89,9 +88,6 @@
       "url": "https://github.com/ackerapple"
     }
   ],
-  "peerDependencies": {
-    "@angular/core": ">= 8.x"
-  },
   "es2015": "fesm2015/angular-file.js",
   "esm5": "esm5/angular-file.js",
   "esm2015": "esm2015/angular-file.js",
