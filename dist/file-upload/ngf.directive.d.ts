@@ -4,6 +4,9 @@ export interface dragMeta {
     type: string;
     kind: string;
 }
+/** A master base set of logic intended to support file select/drag/drop operations
+ NOTE: Use ngfDrop for full drag/drop. Use ngfSelect for selecting
+*/
 export declare class ngf {
     element: ElementRef;
     fileElm: any;
@@ -41,6 +44,7 @@ export declare class ngf {
     getInvalidFiles(files: File[]): InvalidFileItem[];
     handleFiles(files: File[]): void;
     que(files: File[]): void;
+    /** called when input has files */
     changeFn(event: any): void;
     clickHandler(evt: any): boolean;
     beforeSelect(): void;
@@ -56,5 +60,6 @@ export declare class ngf {
     isFilesValid(files: File[]): boolean;
     protected _acceptFilter(item: File): boolean;
     protected _fileSizeFilter(item: File): boolean;
+    /** browsers try hard to conceal data about file drags, this tends to undo that */
     filesToWriteableObject(files: File[]): dragMeta[];
 }

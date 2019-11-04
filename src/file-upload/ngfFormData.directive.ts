@@ -16,7 +16,7 @@ export class ngfFormData {
 
   differ:IterableDiffer<{}>
 
-  constructor(IterableDiffers:IterableDiffers){
+  constructor(IterableDiffers: IterableDiffers){
     this.differ = IterableDiffers.find([]).create()
   }
 
