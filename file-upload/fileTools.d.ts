@@ -14,5 +14,6 @@ export declare function applyTransform(ctx: CanvasRenderingContext2D, orientatio
 export declare function fixFileOrientationByMeta(file: File, result: orientationMeta): Promise<Blob>;
 export declare function applyExifRotation(file: File): Promise<File>;
 export declare function readOrientation(file: File): Promise<orientationMeta>;
+/** converts file-input file into base64 dataUri */
 export declare function dataUrl(file: any, disallowObjectUrl?: any): Promise<string>;
 export declare function restoreExif(orig: any, resized: any): any;

@@ -1,6 +1,10 @@
 # angular-file - Change Log
 All notable changes to this project will be documented here.
 
+## 2.0.0 - (2019-11-04)
+- built for dist better
+- built for ivy
+
 ## 1.3.1 - (2019-06-27)
 - Built on ng8
   - NOTE: A report from another package on ng8 claims may not be compatible with ng7
