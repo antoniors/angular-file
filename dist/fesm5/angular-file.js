@@ -149,6 +149,7 @@ function fixFileOrientationByMeta(file, result) {
                     dataUrl = restoreExif(base, dataUrl);
                     var blob = dataUrltoBlob(dataUrl, file.name);
                     var newFile = blobToFile(blob, File.name);
+console.log(66)
                     res(newFile);
                 }
                 catch (e) {
