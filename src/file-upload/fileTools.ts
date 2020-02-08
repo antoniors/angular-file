@@ -145,7 +145,6 @@ export function applyExifRotation(
     
     return fixFileOrientationByMeta(file,result)
   })
-  .then(()=>file)
 }
 
 export function readOrientation(
