@@ -347,7 +347,8 @@
                         var base = arrayBufferToBase64(result.fixedArrayBuffer);
                         dataUrl = restoreExif(base, dataUrl);
                         var blob = dataUrltoBlob(dataUrl, file.name);
-                        res(blob);
+                        var newFile = blobToFile(blob, File.name);
+                        res(newFile);
                     }
                     catch (e) {
                         rej(e);
@@ -368,8 +369,7 @@
                 return file;
             }
             return fixFileOrientationByMeta(file, result);
-        })
-            .then(function () { return file; });
+        });
     }
     function readOrientation(file) {
         return new Promise(function (res, rej) {
@@ -587,6 +587,14 @@
         return ExifRestorer.restore(orig, resized); //<= EXIF
     }
     ;
+    function blobToFile(theBlob, fileName) {
+        var b = theBlob;
+        //A Blob() is almost a File() - it's just missing the two properties below which we will add
+        b.lastModifiedDate = new Date();
+        b.name = fileName;
+        //Cast to a File() type
+        return theBlob;
+    }
 
     /** A master base set of logic intended to support file select/drag/drop operations
      NOTE: Use ngfDrop for full drag/drop. Use ngfSelect for selecting
