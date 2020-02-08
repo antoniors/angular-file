@@ -1,4 +1,4 @@
-import * as tslib_1 from "tslib";
+import { __decorate } from "tslib";
 import { Directive, ElementRef, Input } from '@angular/core';
 import { dataUrl } from './fileTools';
 var ngfSrc = /** @class */ (function () {
@@ -15,10 +15,10 @@ var ngfSrc = /** @class */ (function () {
     ngfSrc.ctorParameters = function () { return [
         { type: ElementRef }
     ]; };
-    tslib_1.__decorate([
+    __decorate([
         Input('ngfSrc')
     ], ngfSrc.prototype, "file", void 0);
-    ngfSrc = tslib_1.__decorate([
+    ngfSrc = __decorate([
         Directive({ selector: '[ngfSrc]' })
     ], ngfSrc);
     return ngfSrc;

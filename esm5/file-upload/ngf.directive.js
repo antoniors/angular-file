@@ -1,4 +1,4 @@
-import * as tslib_1 from "tslib";
+import { __decorate } from "tslib";
 import { Directive, EventEmitter, ElementRef, Input, Output, HostListener } from '@angular/core';
 import { createInvisibleFileInputWrap, isFileInput, detectSwipe } from "./doc-event-help.functions";
 import { acceptType, applyExifRotation, dataUrl } from "./fileTools";
@@ -271,55 +271,55 @@ var ngf = /** @class */ (function () {
     ngf.ctorParameters = function () { return [
         { type: ElementRef }
     ]; };
-    tslib_1.__decorate([
+    __decorate([
         Input()
     ], ngf.prototype, "multiple", void 0);
-    tslib_1.__decorate([
+    __decorate([
         Input()
     ], ngf.prototype, "accept", void 0);
-    tslib_1.__decorate([
+    __decorate([
         Input()
     ], ngf.prototype, "maxSize", void 0);
-    tslib_1.__decorate([
+    __decorate([
         Input()
     ], ngf.prototype, "ngfFixOrientation", void 0);
-    tslib_1.__decorate([
+    __decorate([
         Input()
     ], ngf.prototype, "fileDropDisabled", void 0);
-    tslib_1.__decorate([
+    __decorate([
         Input()
     ], ngf.prototype, "selectable", void 0);
-    tslib_1.__decorate([
+    __decorate([
         Output('init')
     ], ngf.prototype, "directiveInit", void 0);
-    tslib_1.__decorate([
+    __decorate([
         Input()
     ], ngf.prototype, "lastInvalids", void 0);
-    tslib_1.__decorate([
+    __decorate([
         Output()
     ], ngf.prototype, "lastInvalidsChange", void 0);
-    tslib_1.__decorate([
+    __decorate([
         Input()
     ], ngf.prototype, "lastBaseUrl", void 0);
-    tslib_1.__decorate([
+    __decorate([
         Output()
     ], ngf.prototype, "lastBaseUrlChange", void 0);
-    tslib_1.__decorate([
+    __decorate([
         Input()
     ], ngf.prototype, "file", void 0);
-    tslib_1.__decorate([
+    __decorate([
         Output()
     ], ngf.prototype, "fileChange", void 0);
-    tslib_1.__decorate([
+    __decorate([
         Input()
     ], ngf.prototype, "files", void 0);
-    tslib_1.__decorate([
+    __decorate([
         Output()
     ], ngf.prototype, "filesChange", void 0);
-    tslib_1.__decorate([
+    __decorate([
         HostListener('change', ['$event'])
     ], ngf.prototype, "onChange", null);
-    ngf = tslib_1.__decorate([
+    ngf = __decorate([
         Directive({
             selector: "[ngf]",
             exportAs: "ngf"
