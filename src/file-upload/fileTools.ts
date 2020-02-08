@@ -101,13 +101,13 @@ export function applyTransform(
 
 export function fixFileOrientationByMeta(
   file:File, result:orientationMeta
-):Promise<Blob>{
+):Promise<File>{
   return dataUrl(file, true)
   .then(url=>{
     var canvas = document.createElement('canvas');
     var img = document.createElement('img');
 
-    return <Promise<Blob>>new Promise(function(res,rej){
+    return <Promise<File>>new Promise(function(res,rej){
       img.onload = function () {
         try {
           canvas.width = result.orientation > 4 ? img.height : img.width
@@ -119,7 +119,8 @@ export function fixFileOrientationByMeta(
           const base = arrayBufferToBase64(result.fixedArrayBuffer)
           dataUrl = restoreExif(base, dataUrl)
           var blob = dataUrltoBlob(dataUrl, file.name)
-          res(blob)
+          const newFile = blobToFile(blob, File.name);
+          res(newFile);
         } catch (e) {
           rej(e)
         }
@@ -415,3 +416,13 @@ export function restoreExif(orig:any, resized:any) {
 
   return ExifRestorer.restore(orig, resized);  //<= EXIF
 };
+
+function blobToFile(theBlob: Blob, fileName:string): File {
+  var b: any = theBlob;
+  //A Blob() is almost a File() - it's just missing the two properties below which we will add
+  b.lastModifiedDate = new Date();
+  b.name = fileName;
+
+  //Cast to a File() type
+  return <File>theBlob;
+}
