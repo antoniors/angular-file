@@ -1,4 +1,4 @@
-import * as tslib_1 from "tslib";
+import { __decorate } from "tslib";
 import { Directive, ElementRef, Input } from '@angular/core';
 import { dataUrl } from './fileTools';
 var ngfBackground = /** @class */ (function () {
@@ -16,10 +16,10 @@ var ngfBackground = /** @class */ (function () {
     ngfBackground.ctorParameters = function () { return [
         { type: ElementRef }
     ]; };
-    tslib_1.__decorate([
+    __decorate([
         Input('ngfBackground')
     ], ngfBackground.prototype, "file", void 0);
-    ngfBackground = tslib_1.__decorate([
+    ngfBackground = __decorate([
         Directive({ selector: '[ngfBackground]' })
     ], ngfBackground);
     return ngfBackground;

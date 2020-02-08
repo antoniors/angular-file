@@ -1,4 +1,4 @@
-import * as tslib_1 from "tslib";
+import { __decorate } from "tslib";
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { ngfBackground } from './ngfBackground.directive';
@@ -21,7 +21,7 @@ var declarations = [
 var ngfModule = /** @class */ (function () {
     function ngfModule() {
     }
-    ngfModule = tslib_1.__decorate([
+    ngfModule = __decorate([
         NgModule({
             imports: [
                 CommonModule

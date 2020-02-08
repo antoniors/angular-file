@@ -1,4 +1,4 @@
-import * as tslib_1 from "tslib";
+import { __decorate } from "tslib";
 import { IterableDiffer, IterableDiffers, Directive, EventEmitter, Output, Input } from '@angular/core';
 var ngfFormData = /** @class */ (function () {
     function ngfFormData(IterableDiffers) {
@@ -32,22 +32,22 @@ var ngfFormData = /** @class */ (function () {
     ngfFormData.ctorParameters = function () { return [
         { type: IterableDiffers }
     ]; };
-    tslib_1.__decorate([
+    __decorate([
         Input()
     ], ngfFormData.prototype, "files", void 0);
-    tslib_1.__decorate([
+    __decorate([
         Input()
     ], ngfFormData.prototype, "postName", void 0);
-    tslib_1.__decorate([
+    __decorate([
         Input()
     ], ngfFormData.prototype, "fileName", void 0);
-    tslib_1.__decorate([
+    __decorate([
         Input()
     ], ngfFormData.prototype, "FormData", void 0);
-    tslib_1.__decorate([
+    __decorate([
         Output()
     ], ngfFormData.prototype, "FormDataChange", void 0);
-    ngfFormData = tslib_1.__decorate([
+    ngfFormData = __decorate([
         Directive({ selector: 'ngfFormData' })
     ], ngfFormData);
     return ngfFormData;
