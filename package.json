@@ -1,6 +1,6 @@
 {
   "name": "angular-file",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "private": true,
   "description": "Easy to use Angular directives for user file selections",
   "scripts": {
