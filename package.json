@@ -1,6 +1,6 @@
 {
   "name": "angular-file",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Easy to use Angular directives for user file selections",
   "main": "bundles/angular-file.umd.js",
   "module": "fesm5/angular-file.js",

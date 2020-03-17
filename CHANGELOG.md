@@ -1,6 +1,12 @@
 # angular-file - Change Log
 All notable changes to this project will be documented here.
 
+## 3.0.1 - (2019-03-17)
+- fix typo
+
+## 3.0.0 - (2019-02-01)
+- Built on Angular 9
+
 ## 2.0.0 - (2019-11-04)
 - built for dist better
 - built for ivy
