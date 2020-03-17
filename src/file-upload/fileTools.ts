@@ -119,7 +119,7 @@ export function fixFileOrientationByMeta(
           const base = arrayBufferToBase64(result.fixedArrayBuffer)
           dataUrl = restoreExif(base, dataUrl)
           var blob = dataUrltoBlob(dataUrl, file.name)
-          const newFile = blobToFile(blob, File.name);
+          const newFile = blobToFile(blob, file.name);
           res(newFile);
         } catch (e) {
           rej(e)
