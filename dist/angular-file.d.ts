@@ -1,4 +1,5 @@
 /**
  * Generated bundle index. Do not edit.
  */
-export * from './index';
+/// <amd-module name="angular-file" />
+export * from './public-api';
