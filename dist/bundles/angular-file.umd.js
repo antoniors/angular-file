@@ -884,53 +884,84 @@
             }
             return jsonFiles;
         };
-        ngf.ɵfac = function ngf_Factory(t) { return new (t || ngf)(core.ɵɵdirectiveInject(core.ElementRef)); };
-        ngf.ɵdir = core.ɵɵdefineDirective({ type: ngf, selectors: [["", "ngf", ""]], hostBindings: function ngf_HostBindings(rf, ctx) { if (rf & 1) {
-                core.ɵɵlistener("change", function ngf_change_HostBindingHandler($event) { return ctx.onChange($event); });
-            } }, inputs: { multiple: "multiple", accept: "accept", maxSize: "maxSize", ngfFixOrientation: "ngfFixOrientation", fileDropDisabled: "fileDropDisabled", selectable: "selectable", lastInvalids: "lastInvalids", lastBaseUrl: "lastBaseUrl", file: "file", files: "files" }, outputs: { directiveInit: "init", lastInvalidsChange: "lastInvalidsChange", lastBaseUrlChange: "lastBaseUrlChange", fileChange: "fileChange", filesChange: "filesChange" }, exportAs: ["ngf"], features: [core.ɵɵNgOnChangesFeature] });
+        ngf.ctorParameters = function () { return [
+            { type: core.ElementRef }
+        ]; };
+        __decorate([
+            core.Input(),
+            __metadata("design:type", String)
+        ], ngf.prototype, "multiple", void 0);
+        __decorate([
+            core.Input(),
+            __metadata("design:type", String)
+        ], ngf.prototype, "accept", void 0);
+        __decorate([
+            core.Input(),
+            __metadata("design:type", Number)
+        ], ngf.prototype, "maxSize", void 0);
+        __decorate([
+            core.Input(),
+            __metadata("design:type", Boolean)
+        ], ngf.prototype, "ngfFixOrientation", void 0);
+        __decorate([
+            core.Input(),
+            __metadata("design:type", Boolean)
+        ], ngf.prototype, "fileDropDisabled", void 0);
+        __decorate([
+            core.Input(),
+            __metadata("design:type", Boolean)
+        ], ngf.prototype, "selectable", void 0);
+        __decorate([
+            core.Output('init'),
+            __metadata("design:type", core.EventEmitter)
+        ], ngf.prototype, "directiveInit", void 0);
+        __decorate([
+            core.Input(),
+            __metadata("design:type", Array)
+        ], ngf.prototype, "lastInvalids", void 0);
+        __decorate([
+            core.Output(),
+            __metadata("design:type", core.EventEmitter)
+        ], ngf.prototype, "lastInvalidsChange", void 0);
+        __decorate([
+            core.Input(),
+            __metadata("design:type", String)
+        ], ngf.prototype, "lastBaseUrl", void 0);
+        __decorate([
+            core.Output(),
+            __metadata("design:type", core.EventEmitter)
+        ], ngf.prototype, "lastBaseUrlChange", void 0);
+        __decorate([
+            core.Input(),
+            __metadata("design:type", File)
+        ], ngf.prototype, "file", void 0);
+        __decorate([
+            core.Output(),
+            __metadata("design:type", core.EventEmitter)
+        ], ngf.prototype, "fileChange", void 0);
+        __decorate([
+            core.Input(),
+            __metadata("design:type", Array)
+        ], ngf.prototype, "files", void 0);
+        __decorate([
+            core.Output(),
+            __metadata("design:type", core.EventEmitter)
+        ], ngf.prototype, "filesChange", void 0);
+        __decorate([
+            core.HostListener('change', ['$event']),
+            __metadata("design:type", Function),
+            __metadata("design:paramtypes", [Event]),
+            __metadata("design:returntype", void 0)
+        ], ngf.prototype, "onChange", null);
+        ngf = __decorate([
+            core.Directive({
+                selector: "[ngf]",
+                exportAs: "ngf"
+            }),
+            __metadata("design:paramtypes", [core.ElementRef])
+        ], ngf);
         return ngf;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(ngf, [{
-            type: core.Directive,
-            args: [{
-                    selector: "[ngf]",
-                    exportAs: "ngf"
-                }]
-        }], function () { return [{ type: core.ElementRef }]; }, { multiple: [{
-                type: core.Input
-            }], accept: [{
-                type: core.Input
-            }], maxSize: [{
-                type: core.Input
-            }], ngfFixOrientation: [{
-                type: core.Input
-            }], fileDropDisabled: [{
-                type: core.Input
-            }], selectable: [{
-                type: core.Input
-            }], directiveInit: [{
-                type: core.Output,
-                args: ['init']
-            }], lastInvalids: [{
-                type: core.Input
-            }], lastInvalidsChange: [{
-                type: core.Output
-            }], lastBaseUrl: [{
-                type: core.Input
-            }], lastBaseUrlChange: [{
-                type: core.Output
-            }], file: [{
-                type: core.Input
-            }], fileChange: [{
-                type: core.Output
-            }], files: [{
-                type: core.Input
-            }], filesChange: [{
-                type: core.Output
-            }], onChange: [{
-                type: core.HostListener,
-                args: ['change', ['$event']]
-            }] }); })();
 
     var ngfSelect = /** @class */ (function (_super) {
         __extends(ngfSelect, _super);
@@ -939,20 +970,18 @@
             _this.selectable = true;
             return _this;
         }
-        ngfSelect.ɵfac = function ngfSelect_Factory(t) { return ɵngfSelect_BaseFactory(t || ngfSelect); };
-        ngfSelect.ɵdir = core.ɵɵdefineDirective({ type: ngfSelect, selectors: [["", "ngfSelect", ""]], inputs: { selectable: "selectable" }, exportAs: ["ngfSelect"], features: [core.ɵɵInheritDefinitionFeature] });
+        __decorate([
+            core.Input(),
+            __metadata("design:type", Object)
+        ], ngfSelect.prototype, "selectable", void 0);
+        ngfSelect = __decorate([
+            core.Directive({
+                selector: "[ngfSelect]",
+                exportAs: "ngfSelect"
+            })
+        ], ngfSelect);
         return ngfSelect;
     }(ngf));
-    var ɵngfSelect_BaseFactory = core.ɵɵgetInheritedFactory(ngfSelect);
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(ngfSelect, [{
-            type: core.Directive,
-            args: [{
-                    selector: "[ngfSelect]",
-                    exportAs: "ngfSelect"
-                }]
-        }], null, { selectable: [{
-                type: core.Input
-            }] }); })();
 
     var ngfDrop = /** @class */ (function (_super) {
         __extends(ngfDrop, _super);
@@ -1027,43 +1056,60 @@
             this.stopEvent(event);
             this.fileOver.emit(false);
         };
-        ngfDrop.ɵfac = function ngfDrop_Factory(t) { return ɵngfDrop_BaseFactory(t || ngfDrop); };
-        ngfDrop.ɵdir = core.ɵɵdefineDirective({ type: ngfDrop, selectors: [["", "ngfDrop", ""]], hostBindings: function ngfDrop_HostBindings(rf, ctx) { if (rf & 1) {
-                core.ɵɵlistener("drop", function ngfDrop_drop_HostBindingHandler($event) { return ctx.onDrop($event); })("dragover", function ngfDrop_dragover_HostBindingHandler($event) { return ctx.onDragOver($event); })("dragleave", function ngfDrop_dragleave_HostBindingHandler($event) { return ctx.onDragLeave($event); });
-            } }, inputs: { validDrag: "validDrag", invalidDrag: "invalidDrag", dragFiles: "dragFiles" }, outputs: { fileOver: "fileOver", validDragChange: "validDragChange", invalidDragChange: "invalidDragChange", dragFilesChange: "dragFilesChange" }, exportAs: ["ngfDrop"], features: [core.ɵɵInheritDefinitionFeature] });
+        __decorate([
+            core.Output(),
+            __metadata("design:type", core.EventEmitter)
+        ], ngfDrop.prototype, "fileOver", void 0);
+        __decorate([
+            core.Input(),
+            __metadata("design:type", Boolean)
+        ], ngfDrop.prototype, "validDrag", void 0);
+        __decorate([
+            core.Output(),
+            __metadata("design:type", core.EventEmitter)
+        ], ngfDrop.prototype, "validDragChange", void 0);
+        __decorate([
+            core.Input(),
+            __metadata("design:type", Object)
+        ], ngfDrop.prototype, "invalidDrag", void 0);
+        __decorate([
+            core.Output(),
+            __metadata("design:type", core.EventEmitter)
+        ], ngfDrop.prototype, "invalidDragChange", void 0);
+        __decorate([
+            core.Input(),
+            __metadata("design:type", Array)
+        ], ngfDrop.prototype, "dragFiles", void 0);
+        __decorate([
+            core.Output(),
+            __metadata("design:type", core.EventEmitter)
+        ], ngfDrop.prototype, "dragFilesChange", void 0);
+        __decorate([
+            core.HostListener('drop', ['$event']),
+            __metadata("design:type", Function),
+            __metadata("design:paramtypes", [Event]),
+            __metadata("design:returntype", void 0)
+        ], ngfDrop.prototype, "onDrop", null);
+        __decorate([
+            core.HostListener('dragover', ['$event']),
+            __metadata("design:type", Function),
+            __metadata("design:paramtypes", [Event]),
+            __metadata("design:returntype", void 0)
+        ], ngfDrop.prototype, "onDragOver", null);
+        __decorate([
+            core.HostListener('dragleave', ['$event']),
+            __metadata("design:type", Function),
+            __metadata("design:paramtypes", [Event]),
+            __metadata("design:returntype", Object)
+        ], ngfDrop.prototype, "onDragLeave", null);
+        ngfDrop = __decorate([
+            core.Directive({
+                selector: "[ngfDrop]",
+                exportAs: "ngfDrop"
+            })
+        ], ngfDrop);
         return ngfDrop;
     }(ngf));
-    var ɵngfDrop_BaseFactory = core.ɵɵgetInheritedFactory(ngfDrop);
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(ngfDrop, [{
-            type: core.Directive,
-            args: [{
-                    selector: "[ngfDrop]",
-                    exportAs: "ngfDrop"
-                }]
-        }], null, { fileOver: [{
-                type: core.Output
-            }], validDrag: [{
-                type: core.Input
-            }], validDragChange: [{
-                type: core.Output
-            }], invalidDrag: [{
-                type: core.Input
-            }], invalidDragChange: [{
-                type: core.Output
-            }], dragFiles: [{
-                type: core.Input
-            }], dragFilesChange: [{
-                type: core.Output
-            }], onDrop: [{
-                type: core.HostListener,
-                args: ['drop', ['$event']]
-            }], onDragOver: [{
-                type: core.HostListener,
-                args: ['dragover', ['$event']]
-            }], onDragLeave: [{
-                type: core.HostListener,
-                args: ['dragleave', ['$event']]
-            }] }); })();
 
     var ngfBackground = /** @class */ (function () {
         function ngfBackground(ElementRef) {
@@ -1077,17 +1123,19 @@
                 _this.ElementRef.nativeElement.style.backgroundImage = urlString;
             });
         };
-        ngfBackground.ɵfac = function ngfBackground_Factory(t) { return new (t || ngfBackground)(core.ɵɵdirectiveInject(core.ElementRef)); };
-        ngfBackground.ɵdir = core.ɵɵdefineDirective({ type: ngfBackground, selectors: [["", "ngfBackground", ""]], inputs: { file: ["ngfBackground", "file"] }, features: [core.ɵɵNgOnChangesFeature] });
+        ngfBackground.ctorParameters = function () { return [
+            { type: core.ElementRef }
+        ]; };
+        __decorate([
+            core.Input('ngfBackground'),
+            __metadata("design:type", Object)
+        ], ngfBackground.prototype, "file", void 0);
+        ngfBackground = __decorate([
+            core.Directive({ selector: '[ngfBackground]' }),
+            __metadata("design:paramtypes", [core.ElementRef])
+        ], ngfBackground);
         return ngfBackground;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(ngfBackground, [{
-            type: core.Directive,
-            args: [{ selector: '[ngfBackground]' }]
-        }], function () { return [{ type: core.ElementRef }]; }, { file: [{
-                type: core.Input,
-                args: ['ngfBackground']
-            }] }); })();
 
     var ngfUploadStatus = /** @class */ (function () {
         function ngfUploadStatus() {
@@ -1106,20 +1154,23 @@
                 }
             }
         };
-        ngfUploadStatus.ɵfac = function ngfUploadStatus_Factory(t) { return new (t || ngfUploadStatus)(); };
-        ngfUploadStatus.ɵdir = core.ɵɵdefineDirective({ type: ngfUploadStatus, selectors: [["ngfUploadStatus"]], inputs: { percent: "percent", httpEvent: "httpEvent" }, outputs: { percentChange: "percentChange" }, features: [core.ɵɵNgOnChangesFeature] });
+        __decorate([
+            core.Input(),
+            __metadata("design:type", Number)
+        ], ngfUploadStatus.prototype, "percent", void 0);
+        __decorate([
+            core.Output(),
+            __metadata("design:type", core.EventEmitter)
+        ], ngfUploadStatus.prototype, "percentChange", void 0);
+        __decorate([
+            core.Input(),
+            __metadata("design:type", Event)
+        ], ngfUploadStatus.prototype, "httpEvent", void 0);
+        ngfUploadStatus = __decorate([
+            core.Directive({ selector: 'ngfUploadStatus' })
+        ], ngfUploadStatus);
         return ngfUploadStatus;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(ngfUploadStatus, [{
-            type: core.Directive,
-            args: [{ selector: 'ngfUploadStatus' }]
-        }], null, { percent: [{
-                type: core.Input
-            }], percentChange: [{
-                type: core.Output
-            }], httpEvent: [{
-                type: core.Input
-            }] }); })();
 
     var ngfFormData = /** @class */ (function () {
         function ngfFormData(IterableDiffers) {
@@ -1150,24 +1201,35 @@
                 delete this.FormData;
             }
         };
-        ngfFormData.ɵfac = function ngfFormData_Factory(t) { return new (t || ngfFormData)(core.ɵɵdirectiveInject(core.IterableDiffers)); };
-        ngfFormData.ɵdir = core.ɵɵdefineDirective({ type: ngfFormData, selectors: [["ngfFormData"]], inputs: { files: "files", postName: "postName", fileName: "fileName", FormData: "FormData" }, outputs: { FormDataChange: "FormDataChange" } });
+        ngfFormData.ctorParameters = function () { return [
+            { type: core.IterableDiffers }
+        ]; };
+        __decorate([
+            core.Input(),
+            __metadata("design:type", Array)
+        ], ngfFormData.prototype, "files", void 0);
+        __decorate([
+            core.Input(),
+            __metadata("design:type", String)
+        ], ngfFormData.prototype, "postName", void 0);
+        __decorate([
+            core.Input(),
+            __metadata("design:type", String)
+        ], ngfFormData.prototype, "fileName", void 0);
+        __decorate([
+            core.Input(),
+            __metadata("design:type", FormData)
+        ], ngfFormData.prototype, "FormData", void 0);
+        __decorate([
+            core.Output(),
+            __metadata("design:type", core.EventEmitter)
+        ], ngfFormData.prototype, "FormDataChange", void 0);
+        ngfFormData = __decorate([
+            core.Directive({ selector: 'ngfFormData' }),
+            __metadata("design:paramtypes", [core.IterableDiffers])
+        ], ngfFormData);
         return ngfFormData;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(ngfFormData, [{
-            type: core.Directive,
-            args: [{ selector: 'ngfFormData' }]
-        }], function () { return [{ type: core.IterableDiffers }]; }, { files: [{
-                type: core.Input
-            }], postName: [{
-                type: core.Input
-            }], fileName: [{
-                type: core.Input
-            }], FormData: [{
-                type: core.Input
-            }], FormDataChange: [{
-                type: core.Output
-            }] }); })();
 
     var ngfSrc = /** @class */ (function () {
         function ngfSrc(ElementRef) {
@@ -1180,17 +1242,19 @@
                 return _this.ElementRef.nativeElement.src = src;
             });
         };
-        ngfSrc.ɵfac = function ngfSrc_Factory(t) { return new (t || ngfSrc)(core.ɵɵdirectiveInject(core.ElementRef)); };
-        ngfSrc.ɵdir = core.ɵɵdefineDirective({ type: ngfSrc, selectors: [["", "ngfSrc", ""]], inputs: { file: ["ngfSrc", "file"] }, features: [core.ɵɵNgOnChangesFeature] });
+        ngfSrc.ctorParameters = function () { return [
+            { type: core.ElementRef }
+        ]; };
+        __decorate([
+            core.Input('ngfSrc'),
+            __metadata("design:type", Object)
+        ], ngfSrc.prototype, "file", void 0);
+        ngfSrc = __decorate([
+            core.Directive({ selector: '[ngfSrc]' }),
+            __metadata("design:paramtypes", [core.ElementRef])
+        ], ngfSrc);
         return ngfSrc;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(ngfSrc, [{
-            type: core.Directive,
-            args: [{ selector: '[ngfSrc]' }]
-        }], function () { return [{ type: core.ElementRef }]; }, { file: [{
-                type: core.Input,
-                args: ['ngfSrc']
-            }] }); })();
 
     //import{ HttpModule } from '@angular/http';
     var declarations = [
@@ -1205,39 +1269,18 @@
     var ngfModule = /** @class */ (function () {
         function ngfModule() {
         }
-        ngfModule.ɵmod = core.ɵɵdefineNgModule({ type: ngfModule });
-        ngfModule.ɵinj = core.ɵɵdefineInjector({ factory: function ngfModule_Factory(t) { return new (t || ngfModule)(); }, imports: [[
+        ngfModule = __decorate([
+            core.NgModule({
+                imports: [
                     common.CommonModule
                     //,HttpModule
-                ]] });
+                ],
+                declarations: declarations,
+                exports: declarations //[HttpModule, ...declarations]
+            })
+        ], ngfModule);
         return ngfModule;
     }());
-    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && core.ɵɵsetNgModuleScope(ngfModule, { declarations: [ngfDrop,
-            ngfSelect,
-            ngfBackground,
-            ngfSrc,
-            ngfUploadStatus,
-            ngfFormData,
-            ngf], imports: [common.CommonModule
-            //,HttpModule
-        ], exports: [ngfDrop,
-            ngfSelect,
-            ngfBackground,
-            ngfSrc,
-            ngfUploadStatus,
-            ngfFormData,
-            ngf] }); })();
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(ngfModule, [{
-            type: core.NgModule,
-            args: [{
-                    imports: [
-                        common.CommonModule
-                        //,HttpModule
-                    ],
-                    declarations: declarations,
-                    exports: declarations //[HttpModule, ...declarations]
-                }]
-        }], null, null); })();
 
     exports.ngf = ngf;
     exports.ngfBackground = ngfBackground;

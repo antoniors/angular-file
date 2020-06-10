@@ -1,7 +1,7 @@
+import { __decorate, __metadata } from "tslib";
 import { Directive, ElementRef, Input } from '@angular/core';
 import { dataUrl } from './fileTools';
-import * as i0 from "@angular/core";
-export class ngfSrc {
+let ngfSrc = class ngfSrc {
     constructor(ElementRef) {
         this.ElementRef = ElementRef;
     }
@@ -9,14 +9,17 @@ export class ngfSrc {
         dataUrl(this.file)
             .then(src => this.ElementRef.nativeElement.src = src);
     }
-}
-ngfSrc.ɵfac = function ngfSrc_Factory(t) { return new (t || ngfSrc)(i0.ɵɵdirectiveInject(i0.ElementRef)); };
-ngfSrc.ɵdir = i0.ɵɵdefineDirective({ type: ngfSrc, selectors: [["", "ngfSrc", ""]], inputs: { file: ["ngfSrc", "file"] }, features: [i0.ɵɵNgOnChangesFeature] });
-/*@__PURE__*/ (function () { i0.ɵsetClassMetadata(ngfSrc, [{
-        type: Directive,
-        args: [{ selector: '[ngfSrc]' }]
-    }], function () { return [{ type: i0.ElementRef }]; }, { file: [{
-            type: Input,
-            args: ['ngfSrc']
-        }] }); })();
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibmdmU3JjLmRpcmVjdGl2ZS5qcyIsInNvdXJjZVJvb3QiOiJuZzovL2FuZ3VsYXItZmlsZS8iLCJzb3VyY2VzIjpbImZpbGUtdXBsb2FkL25nZlNyYy5kaXJlY3RpdmUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsT0FBTyxFQUFFLFNBQVMsRUFBRSxVQUFVLEVBQUUsS0FBSyxFQUFFLE1BQU0sZUFBZSxDQUFDO0FBQzdELE9BQU8sRUFBRSxPQUFPLEVBQUUsTUFBTSxhQUFhLENBQUM7O0FBR3RDLE1BQU0sT0FBTyxNQUFNO0lBR2pCLFlBQW1CLFVBQXNCO1FBQXRCLGVBQVUsR0FBVixVQUFVLENBQVk7SUFBSSxDQUFDO0lBRTlDLFdBQVcsQ0FBQyxRQUFhO1FBQ3ZCLE9BQU8sQ0FBQyxJQUFJLENBQUMsSUFBSSxDQUFDO2FBQ2pCLElBQUksQ0FBQyxHQUFHLENBQUEsRUFBRSxDQUNULElBQUksQ0FBQyxVQUFVLENBQUMsYUFBYSxDQUFDLEdBQUcsR0FBRyxHQUFHLENBQ3hDLENBQUE7SUFDSCxDQUFDOzs0REFWVSxNQUFNOzJDQUFOLE1BQU07a0RBQU4sTUFBTTtjQURsQixTQUFTO2VBQUMsRUFBRSxRQUFRLEVBQUUsVUFBVSxFQUFFOztrQkFFaEMsS0FBSzttQkFBQyxRQUFRIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgRGlyZWN0aXZlLCBFbGVtZW50UmVmLCBJbnB1dCB9IGZyb20gJ0Bhbmd1bGFyL2NvcmUnO1xyXG5pbXBvcnQgeyBkYXRhVXJsIH0gZnJvbSAnLi9maWxlVG9vbHMnO1xyXG5cclxuQERpcmVjdGl2ZSh7IHNlbGVjdG9yOiAnW25nZlNyY10nIH0pXHJcbmV4cG9ydCBjbGFzcyBuZ2ZTcmMge1xyXG4gIEBJbnB1dCgnbmdmU3JjJykgZmlsZTogYW55XHJcblxyXG4gIGNvbnN0cnVjdG9yKHB1YmxpYyBFbGVtZW50UmVmOiBFbGVtZW50UmVmKSB7IH1cclxuXHJcbiAgbmdPbkNoYW5nZXMoX2NoYW5nZXM6IGFueSkge1xyXG4gICAgZGF0YVVybCh0aGlzLmZpbGUpXHJcbiAgICAudGhlbihzcmM9PlxyXG4gICAgICB0aGlzLkVsZW1lbnRSZWYubmF0aXZlRWxlbWVudC5zcmMgPSBzcmNcclxuICAgIClcclxuICB9XHJcbn1cclxuIl19
+};
+ngfSrc.ctorParameters = () => [
+    { type: ElementRef }
+];
+__decorate([
+    Input('ngfSrc'),
+    __metadata("design:type", Object)
+], ngfSrc.prototype, "file", void 0);
+ngfSrc = __decorate([
+    Directive({ selector: '[ngfSrc]' }),
+    __metadata("design:paramtypes", [ElementRef])
+], ngfSrc);
+export { ngfSrc };
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibmdmU3JjLmRpcmVjdGl2ZS5qcyIsInNvdXJjZVJvb3QiOiJuZzovL2FuZ3VsYXItZmlsZS8iLCJzb3VyY2VzIjpbImZpbGUtdXBsb2FkL25nZlNyYy5kaXJlY3RpdmUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBLE9BQU8sRUFBRSxTQUFTLEVBQUUsVUFBVSxFQUFFLEtBQUssRUFBRSxNQUFNLGVBQWUsQ0FBQztBQUM3RCxPQUFPLEVBQUUsT0FBTyxFQUFFLE1BQU0sYUFBYSxDQUFDO0FBR3RDLElBQWEsTUFBTSxHQUFuQixNQUFhLE1BQU07SUFHakIsWUFBbUIsVUFBc0I7UUFBdEIsZUFBVSxHQUFWLFVBQVUsQ0FBWTtJQUFJLENBQUM7SUFFOUMsV0FBVyxDQUFDLFFBQWE7UUFDdkIsT0FBTyxDQUFDLElBQUksQ0FBQyxJQUFJLENBQUM7YUFDakIsSUFBSSxDQUFDLEdBQUcsQ0FBQSxFQUFFLENBQ1QsSUFBSSxDQUFDLFVBQVUsQ0FBQyxhQUFhLENBQUMsR0FBRyxHQUFHLEdBQUcsQ0FDeEMsQ0FBQTtJQUNILENBQUM7Q0FDRixDQUFBOztZQVJnQyxVQUFVOztBQUZ4QjtJQUFoQixLQUFLLENBQUMsUUFBUSxDQUFDOztvQ0FBVTtBQURmLE1BQU07SUFEbEIsU0FBUyxDQUFDLEVBQUUsUUFBUSxFQUFFLFVBQVUsRUFBRSxDQUFDO3FDQUlILFVBQVU7R0FIOUIsTUFBTSxDQVdsQjtTQVhZLE1BQU0iLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBEaXJlY3RpdmUsIEVsZW1lbnRSZWYsIElucHV0IH0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XHJcbmltcG9ydCB7IGRhdGFVcmwgfSBmcm9tICcuL2ZpbGVUb29scyc7XHJcblxyXG5ARGlyZWN0aXZlKHsgc2VsZWN0b3I6ICdbbmdmU3JjXScgfSlcclxuZXhwb3J0IGNsYXNzIG5nZlNyYyB7XHJcbiAgQElucHV0KCduZ2ZTcmMnKSBmaWxlOiBhbnlcclxuXHJcbiAgY29uc3RydWN0b3IocHVibGljIEVsZW1lbnRSZWY6IEVsZW1lbnRSZWYpIHsgfVxyXG5cclxuICBuZ09uQ2hhbmdlcyhfY2hhbmdlczogYW55KSB7XHJcbiAgICBkYXRhVXJsKHRoaXMuZmlsZSlcclxuICAgIC50aGVuKHNyYz0+XHJcbiAgICAgIHRoaXMuRWxlbWVudFJlZi5uYXRpdmVFbGVtZW50LnNyYyA9IHNyY1xyXG4gICAgKVxyXG4gIH1cclxufVxyXG4iXX0=

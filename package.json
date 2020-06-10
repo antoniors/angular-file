@@ -4,7 +4,8 @@
   "private": true,
   "description": "Easy to use Angular directives for user file selections",
   "scripts": {
-    "build": "ng build angular-file"
+    "build": "ng build angular-file --prod",
+    "build:dev": "ng build angular-file"
   },
   "main": "dist/index.js",
   "module": "dist/index.js",

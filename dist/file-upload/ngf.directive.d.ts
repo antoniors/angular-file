@@ -1,6 +1,5 @@
 import { EventEmitter, ElementRef } from '@angular/core';
 import { InvalidFileItem } from "./fileTools";
-import * as i0 from "@angular/core";
 export interface dragMeta {
     type: string;
     kind: string;
@@ -63,6 +62,4 @@ export declare class ngf {
     protected _fileSizeFilter(item: File): boolean;
     /** browsers try hard to conceal data about file drags, this tends to undo that */
     filesToWriteableObject(files: File[]): dragMeta[];
-    static ɵfac: i0.ɵɵFactoryDef<ngf, never>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<ngf, "[ngf]", ["ngf"], { "multiple": "multiple"; "accept": "accept"; "maxSize": "maxSize"; "ngfFixOrientation": "ngfFixOrientation"; "fileDropDisabled": "fileDropDisabled"; "selectable": "selectable"; "lastInvalids": "lastInvalids"; "lastBaseUrl": "lastBaseUrl"; "file": "file"; "files": "files"; }, { "directiveInit": "init"; "lastInvalidsChange": "lastInvalidsChange"; "lastBaseUrlChange": "lastBaseUrlChange"; "fileChange": "fileChange"; "filesChange": "filesChange"; }, never>;
 }
