@@ -1,0 +1,2 @@
+- Remove --save-dev on readme.md install guide
+- In examples, remove "ngf" reference thats not being referenced

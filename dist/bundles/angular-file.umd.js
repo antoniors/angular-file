@@ -245,7 +245,9 @@
                     if ((Math.abs(currentX - initialTouchStartX) > 20) ||
                         (Math.abs(currentY - initialTouchStartY) > 20)) {
                         evt.stopPropagation();
-                        evt.preventDefault();
+                        if (evt.cancelable) {
+                            evt.preventDefault();
+                        }
                         return false;
                     }
                 }
