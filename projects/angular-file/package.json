@@ -52,15 +52,5 @@
       "name": "Acker Apple",
       "url": "https://github.com/ackerapple"
     }
-  ],
-  "main": "bundles/angular-file.umd.js",
-  "module": "fesm5/angular-file.js",
-  "es2015": "fesm2015/angular-file.js",
-  "esm5": "esm5/angular-file.js",
-  "esm2015": "esm2015/angular-file.js",
-  "fesm5": "fesm5/angular-file.js",
-  "fesm2015": "fesm2015/angular-file.js",
-  "typings": "angular-file.d.ts",
-  "metadata": "angular-file.metadata.json",
-  "sideEffects": false
+  ]
 }

@@ -1,4 +1,4 @@
-import { __decorate } from 'tslib';
+import { __decorate, __metadata } from 'tslib';
 import { EventEmitter, ElementRef, Input, Output, HostListener, Directive, IterableDiffers, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -664,58 +664,77 @@ ngf.ctorParameters = () => [
     { type: ElementRef }
 ];
 __decorate([
-    Input()
+    Input(),
+    __metadata("design:type", String)
 ], ngf.prototype, "multiple", void 0);
 __decorate([
-    Input()
+    Input(),
+    __metadata("design:type", String)
 ], ngf.prototype, "accept", void 0);
 __decorate([
-    Input()
+    Input(),
+    __metadata("design:type", Number)
 ], ngf.prototype, "maxSize", void 0);
 __decorate([
-    Input()
+    Input(),
+    __metadata("design:type", Boolean)
 ], ngf.prototype, "ngfFixOrientation", void 0);
 __decorate([
-    Input()
+    Input(),
+    __metadata("design:type", Boolean)
 ], ngf.prototype, "fileDropDisabled", void 0);
 __decorate([
-    Input()
+    Input(),
+    __metadata("design:type", Boolean)
 ], ngf.prototype, "selectable", void 0);
 __decorate([
-    Output('init')
+    Output('init'),
+    __metadata("design:type", EventEmitter)
 ], ngf.prototype, "directiveInit", void 0);
 __decorate([
-    Input()
+    Input(),
+    __metadata("design:type", Array)
 ], ngf.prototype, "lastInvalids", void 0);
 __decorate([
-    Output()
+    Output(),
+    __metadata("design:type", EventEmitter)
 ], ngf.prototype, "lastInvalidsChange", void 0);
 __decorate([
-    Input()
+    Input(),
+    __metadata("design:type", String)
 ], ngf.prototype, "lastBaseUrl", void 0);
 __decorate([
-    Output()
+    Output(),
+    __metadata("design:type", EventEmitter)
 ], ngf.prototype, "lastBaseUrlChange", void 0);
 __decorate([
-    Input()
+    Input(),
+    __metadata("design:type", File)
 ], ngf.prototype, "file", void 0);
 __decorate([
-    Output()
+    Output(),
+    __metadata("design:type", EventEmitter)
 ], ngf.prototype, "fileChange", void 0);
 __decorate([
-    Input()
+    Input(),
+    __metadata("design:type", Array)
 ], ngf.prototype, "files", void 0);
 __decorate([
-    Output()
+    Output(),
+    __metadata("design:type", EventEmitter)
 ], ngf.prototype, "filesChange", void 0);
 __decorate([
-    HostListener('change', ['$event'])
+    HostListener('change', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Event]),
+    __metadata("design:returntype", void 0)
 ], ngf.prototype, "onChange", null);
 ngf = __decorate([
     Directive({
         selector: "[ngf]",
         exportAs: "ngf"
-    })
+    }),
+    __metadata("design:paramtypes", [ElementRef])
 ], ngf);
 
 let ngfSelect = class ngfSelect extends ngf {
@@ -725,7 +744,8 @@ let ngfSelect = class ngfSelect extends ngf {
     }
 };
 __decorate([
-    Input()
+    Input(),
+    __metadata("design:type", Object)
 ], ngfSelect.prototype, "selectable", void 0);
 ngfSelect = __decorate([
     Directive({
@@ -807,34 +827,50 @@ let ngfDrop = class ngfDrop extends ngf {
     }
 };
 __decorate([
-    Output()
+    Output(),
+    __metadata("design:type", EventEmitter)
 ], ngfDrop.prototype, "fileOver", void 0);
 __decorate([
-    Input()
+    Input(),
+    __metadata("design:type", Boolean)
 ], ngfDrop.prototype, "validDrag", void 0);
 __decorate([
-    Output()
+    Output(),
+    __metadata("design:type", EventEmitter)
 ], ngfDrop.prototype, "validDragChange", void 0);
 __decorate([
-    Input()
+    Input(),
+    __metadata("design:type", Object)
 ], ngfDrop.prototype, "invalidDrag", void 0);
 __decorate([
-    Output()
+    Output(),
+    __metadata("design:type", EventEmitter)
 ], ngfDrop.prototype, "invalidDragChange", void 0);
 __decorate([
-    Input()
+    Input(),
+    __metadata("design:type", Array)
 ], ngfDrop.prototype, "dragFiles", void 0);
 __decorate([
-    Output()
+    Output(),
+    __metadata("design:type", EventEmitter)
 ], ngfDrop.prototype, "dragFilesChange", void 0);
 __decorate([
-    HostListener('drop', ['$event'])
+    HostListener('drop', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Event]),
+    __metadata("design:returntype", void 0)
 ], ngfDrop.prototype, "onDrop", null);
 __decorate([
-    HostListener('dragover', ['$event'])
+    HostListener('dragover', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Event]),
+    __metadata("design:returntype", void 0)
 ], ngfDrop.prototype, "onDragOver", null);
 __decorate([
-    HostListener('dragleave', ['$event'])
+    HostListener('dragleave', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Event]),
+    __metadata("design:returntype", Object)
 ], ngfDrop.prototype, "onDragLeave", null);
 ngfDrop = __decorate([
     Directive({
@@ -859,10 +895,12 @@ ngfBackground.ctorParameters = () => [
     { type: ElementRef }
 ];
 __decorate([
-    Input('ngfBackground')
+    Input('ngfBackground'),
+    __metadata("design:type", Object)
 ], ngfBackground.prototype, "file", void 0);
 ngfBackground = __decorate([
-    Directive({ selector: '[ngfBackground]' })
+    Directive({ selector: '[ngfBackground]' }),
+    __metadata("design:paramtypes", [ElementRef])
 ], ngfBackground);
 
 let ngfUploadStatus = class ngfUploadStatus {
@@ -883,13 +921,16 @@ let ngfUploadStatus = class ngfUploadStatus {
     }
 };
 __decorate([
-    Input()
+    Input(),
+    __metadata("design:type", Number)
 ], ngfUploadStatus.prototype, "percent", void 0);
 __decorate([
-    Output()
+    Output(),
+    __metadata("design:type", EventEmitter)
 ], ngfUploadStatus.prototype, "percentChange", void 0);
 __decorate([
-    Input()
+    Input(),
+    __metadata("design:type", Event)
 ], ngfUploadStatus.prototype, "httpEvent", void 0);
 ngfUploadStatus = __decorate([
     Directive({ selector: 'ngfUploadStatus' })
@@ -925,22 +966,28 @@ ngfFormData.ctorParameters = () => [
     { type: IterableDiffers }
 ];
 __decorate([
-    Input()
+    Input(),
+    __metadata("design:type", Array)
 ], ngfFormData.prototype, "files", void 0);
 __decorate([
-    Input()
+    Input(),
+    __metadata("design:type", String)
 ], ngfFormData.prototype, "postName", void 0);
 __decorate([
-    Input()
+    Input(),
+    __metadata("design:type", String)
 ], ngfFormData.prototype, "fileName", void 0);
 __decorate([
-    Input()
+    Input(),
+    __metadata("design:type", FormData)
 ], ngfFormData.prototype, "FormData", void 0);
 __decorate([
-    Output()
+    Output(),
+    __metadata("design:type", EventEmitter)
 ], ngfFormData.prototype, "FormDataChange", void 0);
 ngfFormData = __decorate([
-    Directive({ selector: 'ngfFormData' })
+    Directive({ selector: 'ngfFormData' }),
+    __metadata("design:paramtypes", [IterableDiffers])
 ], ngfFormData);
 
 let ngfSrc = class ngfSrc {
@@ -956,10 +1003,12 @@ ngfSrc.ctorParameters = () => [
     { type: ElementRef }
 ];
 __decorate([
-    Input('ngfSrc')
+    Input('ngfSrc'),
+    __metadata("design:type", Object)
 ], ngfSrc.prototype, "file", void 0);
 ngfSrc = __decorate([
-    Directive({ selector: '[ngfSrc]' })
+    Directive({ selector: '[ngfSrc]' }),
+    __metadata("design:paramtypes", [ElementRef])
 ], ngfSrc);
 
 //import{ HttpModule } from '@angular/http';
@@ -984,6 +1033,10 @@ ngfModule = __decorate([
         exports: declarations //[HttpModule, ...declarations]
     })
 ], ngfModule);
+
+/*
+ * Public API Surface of angular-file
+ */
 
 /**
  * Generated bundle index. Do not edit.

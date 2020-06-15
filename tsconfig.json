@@ -18,8 +18,14 @@
       "es2018",
       "dom"
     ],
-    "paths":{
-      "angular-file/*": ["../../dist/*"]
+    "paths": {
+      "angular-file/*": [
+        "../../dist/*"
+      ],
+      "angular-file": [
+        "dist/angular-file/angular-file",
+        "dist/angular-file"
+      ]
     }
   }
 }

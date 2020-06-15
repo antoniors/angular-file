@@ -1,6 +1,9 @@
 # angular-file - Change Log
 All notable changes to this project will be documented here.
 
+## 3.1.0 - (2020-06-10)
+- Build using @angular/cli library
+
 ## 3.0.1 - (2019-03-17)
 - fix typo
 
