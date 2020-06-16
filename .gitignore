@@ -31,8 +31,6 @@ Thumbs.db
 
 #Acker Apple common folder for double-click script executions
 /updaters
-*.css.map
-*.js.map
 
 /demo/e2e/*.js
 /demo/e2e/*.map
