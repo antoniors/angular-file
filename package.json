@@ -21,8 +21,8 @@
   },
   "homepage": "https://github.com/ackerapple/angular-file#readme",
   "peerDependencies": {
-    "@angular/common": "^9.1.9",
-    "@angular/core": "^9.1.9"
+    "@angular/common": "^10.0.0",
+    "@angular/core": "^10.0.0"
   },
   "dependencies": {
     "tslib": "^1.10.0"
